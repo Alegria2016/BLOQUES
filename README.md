@@ -1,4 +1,4 @@
-# Bloques
+# App Bloques
 
 Proyecto Java con Spring Boot que resuelve el problema de formar palabras usando bloques de letras, siguiendo reglas específicas. Incluye pruebas unitarias y ejemplos de uso.
 
