@@ -37,7 +37,7 @@ mvnw / mvnw.cmd
 
 1. **Clona el repositorio**
    ```sh
-   git clone <URL_DEL_REPOSITORIO>
+   git clone (https://github.com/Alegria2016/BLOQUES)
    cd bloques
    ```
 
