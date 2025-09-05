@@ -25,23 +25,8 @@ public class BloquesApplication {
 
 			System.out.println(estado + " " + palabras[i] + ": " + resultadoStr + " (esperado: " + esperadoStr + ")");
 
-			if (resultado != resultadosEsperados[i]) {
-				todosPasaron = false;
-			}
-		}
 
-		System.out.println("\n==================================================");
-		if (todosPasaron) {
-			System.out.println("🎉 ¡TODOS LOS CASOS DE PRUEBA PASARON EXITOSAMENTE!");
-			System.out.println("✅ La implementación cumple con todos los requerimientos");
-		} else {
-			System.out.println("❌ Algunos casos de prueba fallaron");
 		}
-		System.out.println("==================================================");
-
-		System.out.println("\n==================================================");
-		System.out.println("🎯 Prueba completada - Función: puedo_obtener_palabra()");
-		System.out.println("==================================================");
 	}
 
 }

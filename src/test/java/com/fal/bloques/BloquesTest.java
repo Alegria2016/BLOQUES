@@ -1,8 +1,10 @@
 package com.fal.bloques;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.Assert.*;
+@SpringBootTest
 public class BloquesTest {
 
     @Test
@@ -65,7 +67,7 @@ public class BloquesTest {
                 {'X', 'D'}   // Este bloque se usará para 'D'
         };
 
-        System.out.println("=== TEST BLOQUES PERSONALIZADOS CORREGIDO ===");
+        System.out.println("=== TEST BLOQUES PERSONALIZADOS ===");
         System.out.println("A: " + Bloques.puedoObtenerPalabra("A", bloquesPersonalizados));
         System.out.println("B: " + Bloques.puedoObtenerPalabra("B", bloquesPersonalizados));
         System.out.println("C: " + Bloques.puedoObtenerPalabra("C", bloquesPersonalizados));
@@ -97,7 +99,7 @@ public class BloquesTest {
                 {'F', 'G'}   // Bloque sin A - solo hay 2 bloques con A, no 3
         };
 
-        System.out.println("=== TEST LETRAS REPETIDAS CORREGIDO ===");
+        System.out.println("=== TEST LETRAS REPETIDAS ===");
         System.out.println("A: " + Bloques.puedoObtenerPalabra("A", bloquesConRepetidas));
         System.out.println("AA: " + Bloques.puedoObtenerPalabra("AA", bloquesConRepetidas));
         System.out.println("AAA: " + Bloques.puedoObtenerPalabra("AAA", bloquesConRepetidas));
@@ -149,7 +151,7 @@ public class BloquesTest {
     @Test
     public void testProblemaOriginalCompleto() {
         // Todos los casos del problema original en un solo test
-        System.out.println("=== TEST COMPLETO PROBLEMA ORIGINAL ===");
+        System.out.println("=== TEST EJEMPLO DE PRUEBAS COMPLETO  ===");
 
         String[] palabras = {"A", "LIBRO", "BOZO", "TRAJE", "COMUN", "CAMPANA", "DORITO", "ARLEQUIN"};
         boolean[] resultadosEsperados = {true, true, false, true, true, false, true, true};

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Prueba de Bloques ABC</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #007acc;
+        }
+        .header h1 {
+            color: #007acc;
+            margin: 0;
+            font-size: 24px;
+        }
+        .header h2 {
+            color: #333;
+            font-weight: normal;
+            margin: 5px 0 0 0;
+            font-size: 16px;
+        }
+        .test-case {
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 3px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #007acc;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .test-case.success {
+            border-left-color: #28a745;
+        }
+        .test-case.failure {
+            border-left-color: #dc3545;
+        }
+        .result {
+            font-weight: bold;
+        }
+        .result.true {
+            color: #28a745;
+        }
+        .result.false {
+            color: #dc3545;
+        }
+        .checkmark {
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .crossmark {
+            color: #dc3545;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .summary {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #d4edda;
+            color: #155724;
+            border-radius: 3px;
+            text-align: center;
+            font-family: monospace;
+            border: 1px solid #c3e6cb;
+        }
+        .summary.failure {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .timestamp {
+            text-align: center;
+            color: #6c757d;
+            margin-top: 20px;
+            font-size: 12px;
+            font-family: monospace;
+        }
+        .section-title {
+            color: #333;
+            margin: 20px 0 10px 0;
+            font-family: monospace;
+            font-size: 16px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .divider {
+            border-bottom: 1px solid #ddd;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Prueba de Bloques ABC</h1>
+        <h2>Félix Alegría Loango</h2>
+    </div>
+
+    <div class="section-title">Ejemplo – Casos de prueba:</div>
+    <div class="divider"></div>
+
+    <div th:each="resultado : ${resultados}"
+         class="test-case"
+         th:classappend="${resultado.exitoso} ? 'success' : 'failure'">
+        <span th:text="${resultado.icono}">✓</span>
+        <span th:text="' ' + ${resultado.palabra} + ': '">A: </span>
+        <span th:classappend="'result ' + ${resultado.resultadoRealStr.toLowerCase()}"
+              th:text="${resultado.resultadoRealStr}">True</span>
+        <span th:text="' (esperado: '"> (esperado: </span>
+        <span th:classappend="'result ' + ${resultado.resultadoEsperadoStr.toLowerCase()}"
+              th:text="${resultado.resultadoEsperadoStr}">True</span>
+        <span th:text="')'">)</span>
+    </div>
+
+    <div class="timestamp">
+        <p>🕒 Ejecutado el: <span th:text="${fechaEjecucion}">01/01/2024 12:00:00</span></p>
+    </div>
+</div>
+</body>
+</html>
