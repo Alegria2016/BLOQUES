@@ -1,32 +1,32 @@
-# Bloques
+# FUNCIÓN BLOQUES.
+**Prueba Técnica – Félix Alegria Loango.** 
 
 Proyecto Java con Spring Boot que resuelve el problema de formar palabras usando bloques de letras, siguiendo reglas específicas. Incluye pruebas unitarias y ejemplos de uso.
 
-## Funcionalidad
 
-La clase principal [`com.fal.bloques.Bloques`](src/main/java/com/fal/bloques/Bloques.java) implementa el método [`puedoObtenerPalabra`](src/main/java/com/fal/bloques/Bloques.java) que determina si una palabra puede formarse usando un conjunto de bloques de letras, donde cada bloque solo puede usarse una vez y cada letra de la palabra debe estar en algún bloque.
-
-El proyecto incluye:
-- Ejecución de casos de prueba en consola desde [`com.fal.bloques.BloquesApplication`](src/main/java/com/fal/bloques/BloquesApplication.java).
-- Pruebas unitarias en [`com.fal.bloques.BloquesTest`](src/test/java/com/fal/bloques/BloquesTest.java).
-
-## Estructura
+## Resultados Ejecucion de la Función
 
 ```
-src/
-  main/
-    java/com/fal/bloques/
-      Bloques.java
-      BloquesApplication.java
-    resources/
-      application.properties
-  test/
-    java/com/fal/bloques/
-      BloquesTest.java
-      BloquesApplicationTests.java
-pom.xml
-mvnw / mvnw.cmd
+Ejemplo – Casos de prueba:
+----------------------------------------
+✓ A: True (esperado: True)
+✓ LIBRO: True (esperado: True)
+✓ BOZO: False (esperado: False)
+✓ TRAJE: True (esperado: True)
+✓ COMUN: True (esperado: True)
+✓ CAMPANA: False (esperado: False)
+✓ DORITO: True (esperado: True)
+✓ ARLEQUIN: True (esperado: True)
+
 ```
+
+## Controlador de prueba de los resultados.
+Se realiza un controlador de prueba para mostrar los resultados mediante una plantilla Html, los resultados se pueden ver en la siguiente ruta una vez se inicia la aplicación.
+Url: http://localhost:8080/resultados
+
+<img width="779" height="532" alt="image" src="https://github.com/user-attachments/assets/fb87181b-0b13-4c7b-8e90-fe9d88edf7b6" />
+
+
 
 ## Requisitos
 
@@ -37,7 +37,7 @@ mvnw / mvnw.cmd
 
 1. **Clona el repositorio**
    ```sh
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/Alegria2016/BLOQUES
    cd bloques
    ```
 
@@ -58,8 +58,7 @@ mvnw / mvnw.cmd
    ```
    Verás los resultados de los tests definidos en [`com.fal.bloques.BloquesTest`](src/test/java/com/fal/bloques/BloquesTest.java).
 
-## Personalización
 
-Puedes modificar los bloques o agregar nuevos casos de prueba editando [`Bloques.java`](src/main/java/com/fal/bloques/Bloques.java) y [`BloquesTest.java`](src/test/java/com/fal/bloques/BloquesTest.java).
+## Autor
 
-##
+Felix Alegria Loango - LOGGRO.
