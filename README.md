@@ -10,22 +10,20 @@ El proyecto incluye:
 - Ejecución de casos de prueba en consola desde [`com.fal.bloques.BloquesApplication`](src/main/java/com/fal/bloques/BloquesApplication.java).
 - Pruebas unitarias en [`com.fal.bloques.BloquesTest`](src/test/java/com/fal/bloques/BloquesTest.java).
 
-## Estructura
+## Resultados Ejecucion de la Función
 
 ```
-src/
-  main/
-    java/com/fal/bloques/
-      Bloques.java
-      BloquesApplication.java
-    resources/
-      application.properties
-  test/
-    java/com/fal/bloques/
-      BloquesTest.java
-      BloquesApplicationTests.java
-pom.xml
-mvnw / mvnw.cmd
+Ejemplo – Casos de prueba:
+----------------------------------------
+✓ A: True (esperado: True)
+✓ LIBRO: True (esperado: True)
+✓ BOZO: False (esperado: False)
+✓ TRAJE: True (esperado: True)
+✓ COMUN: True (esperado: True)
+✓ CAMPANA: False (esperado: False)
+✓ DORITO: True (esperado: True)
+✓ ARLEQUIN: True (esperado: True)
+
 ```
 
 ## Requisitos
