@@ -1,4 +1,5 @@
-# App Bloques
+# FUNCIÓN BLOQUES.
+**Prueba Técnica – Félix Alegria Loango.** 
 
 Proyecto Java con Spring Boot que resuelve el problema de formar palabras usando bloques de letras, siguiendo reglas específicas. Incluye pruebas unitarias y ejemplos de uso.
 
