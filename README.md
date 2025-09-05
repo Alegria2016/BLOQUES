@@ -58,14 +58,7 @@ Url: http://localhost:8080/resultados
    ```
    Verás los resultados de los tests definidos en [`com.fal.bloques.BloquesTest`](src/test/java/com/fal/bloques/BloquesTest.java).
 
-## Personalización
-
-Puedes modificar los bloques o agregar nuevos casos de prueba editando [`Bloques.java`](src/main/java/com/fal/bloques/Bloques.java) y [`BloquesTest.java`](src/test/java/com/fal/bloques/BloquesTest.java).
-
-
-
----
 
 ## Autor
 
-BTG Pactual - Prueba de Desarrollo Felix Alegria L.
+Felix Alegria Loango - LOGGRO.
