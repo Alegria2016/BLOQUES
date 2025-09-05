@@ -2,13 +2,6 @@
 
 Proyecto Java con Spring Boot que resuelve el problema de formar palabras usando bloques de letras, siguiendo reglas específicas. Incluye pruebas unitarias y ejemplos de uso.
 
-## Funcionalidad
-
-La clase principal [`com.fal.bloques.Bloques`](src/main/java/com/fal/bloques/Bloques.java) implementa el método [`puedoObtenerPalabra`](src/main/java/com/fal/bloques/Bloques.java) que determina si una palabra puede formarse usando un conjunto de bloques de letras, donde cada bloque solo puede usarse una vez y cada letra de la palabra debe estar en algún bloque.
-
-El proyecto incluye:
-- Ejecución de casos de prueba en consola desde [`com.fal.bloques.BloquesApplication`](src/main/java/com/fal/bloques/BloquesApplication.java).
-- Pruebas unitarias en [`com.fal.bloques.BloquesTest`](src/test/java/com/fal/bloques/BloquesTest.java).
 
 ## Resultados Ejecucion de la Función
 
