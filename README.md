@@ -61,4 +61,10 @@ Url: http://localhost:8080/resultados
 
 Puedes modificar los bloques o agregar nuevos casos de prueba editando [`Bloques.java`](src/main/java/com/fal/bloques/Bloques.java) y [`BloquesTest.java`](src/test/java/com/fal/bloques/BloquesTest.java).
 
-##
+
+
+---
+
+## Autor
+
+BTG Pactual - Prueba de Desarrollo Felix Alegria L.
