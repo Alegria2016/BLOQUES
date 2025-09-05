@@ -20,7 +20,8 @@ Ejemplo – Casos de prueba:
 ```
 
 ## Controlador de prueba de los resultados.
-Se realiza un controlador de prueba para mostrar los resultados mediante una plantilla Html.
+Se realiza un controlador de prueba para mostrar los resultados mediante una plantilla Html, los resultados se pueden ver en la siguiente ruta una vez se inicia la aplicación.
+Url: http://localhost:8080/resultados
 
 <img width="779" height="532" alt="image" src="https://github.com/user-attachments/assets/fb87181b-0b13-4c7b-8e90-fe9d88edf7b6" />
 
